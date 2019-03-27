@@ -1,0 +1,2 @@
+Issue Type,Issue key,Issue id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated
+Bug,HHH-10742,43917,Hibernate dynamic subclassing makes invalid class loader assumptions,brmeyer,timothyjward,Major,In corso,,13/05/2016 03:18,18/01/2017 03:36

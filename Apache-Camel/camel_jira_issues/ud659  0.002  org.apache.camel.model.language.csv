@@ -1,0 +1,6 @@
+Issue Type,Issue key,Issue id,Parent id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated,Due Date
+Bug,CAMEL-11281,13071950,,camel-spring is not usable in an osgi-context,davsclaus,guyv,Major,Resolved,Fixed,15/May/17 11:20,16/May/17 09:46,
+Bug,CAMEL-5312,12558349,,Adding Restlet routes with relative paths to Apache Camel context does NOT work after I send first request to restlet route ,davsclaus,amit1000,Major,Resolved,Invalid,28/May/12 16:02,18/Jan/17 21:47,
+Bug,CAMEL-2940,12485952,,org.apache.camel.component.test package is imported in camel-spring component - generates error on OSGI platform,cmoulliard,cmoulliard,Major,Closed,Fixed,12/Jul/10 15:12,24/Apr/11 09:57,
+Bug,CAMEL-3435,12493401,,Bad import-package reference added in project (org.apache.camel.core.osgi instead of org.apache.camel.osgi),njiang,cmoulliard,Major,Closed,Invalid,16/Dec/10 07:27,20/Dec/10 09:18,
+Bug,CAMEL-774,12485911,,ResolverUtil under OSGi error: Could not search jar file '/org/apache/camel/converter',davsclaus,ceefour,Major,Closed,Fixed,31/Jul/08 20:39,16/Feb/09 05:51,

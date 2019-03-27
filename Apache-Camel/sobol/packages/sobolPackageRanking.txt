@@ -1,0 +1,10 @@
+org.apache.camel  0.956202
+org.apache.camel.util  0.036363
+org.apache.camel.processor  0.007982
+org.apache.camel.model  0.001536
+org.apache.camel.com  2.04E-4
+org.apache.camel.component  5.5E-5
+org.apache.camel.builder  1.17E-4
+org.apache.camel.management  1.02E-4
+org.apache.camel.converter  6.5E-5
+org.apache.camel.spi  5.2E-5

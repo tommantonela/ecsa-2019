@@ -1,0 +1,4 @@
+"Issue Type","Issue key","Issue id","Summary","Assignee","Reporter","Priority","Status","Resolution","Created","Updated","Due Date"
+"Bug","CXF-2091",12416313,"CXF Bundle is hardly usable under OSGi","dkulp","ceefour","Major","Closed","Fixed","06/Mar/09 16:42","01/Feb/10 19:02",
+"Bug","CXF-2092",12416336,"CXF 2.2-SNAPSHOT exports svn packages","dkulp","ceefour","Major","Closed","Fixed","06/Mar/09 21:44","04/Jun/09 21:34",
+"Bug","CXF-916",12376198,"Package renaming needed from org.codehaus.xfire -> org.apache.cxf?","njiang","mazzag","Minor","Closed","Fixed","16/Aug/07 20:53","05/Oct/07 16:46",

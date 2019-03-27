@@ -1,0 +1,5 @@
+Issue Type,Issue key,Issue id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated
+Bug,HHH-7670,26265,MySQL's concat_ws function is not supported,brmeyer,maxxyme,Major,Awaiting Response,,04/10/2012 11:44,27/ott/2015 20:24 PM
+Bug,HHH-6865,24472,PessimisticLockException should be thrown when pessimistic read and write locking strategies fail,steve,gbadner,Major,Closed,Solved,30/11/2011 06:30,30/nov/2011 22:11 PM
+Improvement,HHH-1950,15890,Database Dialect for Progress 9.1D,,gastaldi,Major,Open,,26/07/2006 12:39,26/07/2006 12:39
+Bug,HHH-1483,14979,MySQL5: No Dialect mapping for JDBC type: -1,gbadner,bsp,Minor,Closed,Duplicated,14/feb/2006 15:42 PM,21/03/2011 12:05

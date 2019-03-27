@@ -1,0 +1,9 @@
+Issue Type,Custom field (Patch Info),Issue key,Issue id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated,Due Date
+Bug,,CAMEL-4026,12508608,"Camel does not work out of the box in Java webstart, due classpath scanning is not possible",davsclaus,jn,Minor,Resolved,Fixed,28/May/11 01:16,23/Jul/11 11:07,
+Bug,,CAMEL-3650,12498227,SMSC initiated unbind spawns exponential amounts of reconnect threads,muellerc,jacovt,Critical,Closed,Fixed,10/Feb/11 10:49,25/Oct/11 11:35,
+Bug,,CAMEL-3499,12494703,Issue with camel-soap - <dataFormats> -  JAXBContext not created,njiang,cmoulliard,Major,Closed,Fixed,05/Jan/11 10:07,06/Jan/11 10:08,
+Improvement,Patch Available,CAMEL-3449,12493699,Change to allow proxying (of non-serializable beans) to work over protocols such as Mina/Netty,,earcam,Minor,Resolved,Won't Fix,20/Dec/10 18:14,11/Jul/15 22:22,
+Bug,,CAMEL-2940,12485952,org.apache.camel.component.test package is imported in camel-spring component - generates error on OSGI platform,cmoulliard,cmoulliard,Major,Closed,Fixed,12/Jul/10 15:12,24/Apr/11 09:57,
+Bug,,CAMEL-2663,12487328,DefaultPackageScanClassResolver can't read entries in an eclipse rcp app because it can't handle bundleresource - protocol,njiang,cdittberner,Major,Closed,Fixed,21/Apr/10 10:21,24/Apr/11 10:01,
+Improvement,,CAMEL-2013,12487340,Docs need to stress importance of having org.apache.camel.component.bean as an Import-Package for Bean Binding to work with @Consumes in an OSGi container (SMX4),smerp,smerp,Minor,Closed,Incomplete,14/Sep/09 19:53,24/Apr/11 10:01,
+Bug,,CAMEL-774,12485911,ResolverUtil under OSGi error: Could not search jar file '/org/apache/camel/converter',davsclaus,ceefour,Major,Closed,Fixed,31/Jul/08 20:39,16/Feb/09 05:51,

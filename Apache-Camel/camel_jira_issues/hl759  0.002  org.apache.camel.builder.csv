@@ -1,0 +1,10 @@
+"Issue Type","Custom field (Patch Info)","Issue key","Issue id","Parent id","Summary","Assignee","Reporter","Priority","Status","Resolution","Created","Updated","Due Date"
+"Bug",,"CAMEL-5772","12614785",,"Csv, Bindy, .... librairies are not retrieved using camel-cdi on Karaf",,"cmoulliard","Major","Resolved","Later","05/11/2012 13:04","26/Aug/14 20:24",
+"Bug",,"CAMEL-6280","12642447",,"camel-example-osgi failed","njiang","muellerc","Major","Closed","Fixed","14/04/2013 15:05","17/04/2013 19:34",
+"Bug",,"CAMEL-2940","12485952",,"org.apache.camel.component.test package is imported in camel-spring component - generates error on OSGI platform","cmoulliard","cmoulliard","Major","Closed","Fixed","12/Jul/10 15:12","24/04/2011 09:57",
+"Bug",,"CAMEL-774","12485911",,"ResolverUtil under OSGi error: Could not search jar file '/org/apache/camel/converter'","davsclaus","ceefour","Major","Closed","Fixed","31/Jul/08 20:39","16/02/2009 05:51",
+"New Feature","Patch Available","CAMEL-101","12485063",,"SquelchBuilder",,"nnordrum","Major","Closed","Duplicate","13/Aug/07 23:40","23/Oct/08 20:03",
+"New Feature",,"CAMEL-10671","13031685",,"camel-example-celyon","njiang","davsclaus","Minor","Resolved","Fixed","03/Jan/17 15:37","08/May/18 13:31",
+"Improvement",,"CAMEL-11532","13086254",,"java 8 dsl : allow to set the body using a supplier","lb","lb","Minor","Resolved","Fixed","11/Jul/17 13:25","27/11/2017 13:26",
+"Bug",,"CAMEL-7582","12725564",,"Python scripts with multiple statements return null","njiang","tdudgeon","Minor","Resolved","Fixed","05/Jul/14 10:31","23/Jul/14 08:18",
+"New Feature","Patch Available","CAMEL-6139","12635776",,"Split the content of a Zip File","njiang","gardellajuanpablo","Minor","Resolved","Fixed","07/03/2013 11:33","21/Sep/13 00:03",

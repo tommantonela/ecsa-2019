@@ -1,0 +1,3 @@
+Tipo ticket,Chiave di ticket,ID ticket,Riepilogo,Assegnatario,Reporter,Priorità,Stato,Risoluzione,Creato,Aggiornato
+Bug,HHH-5882,22475,JPA lazy Load problem on many-to-one property getter,steve,depyuka,Importante,Chiusa,Rejected,30/Jan/2011 03:56 AM,28/Dec/2011 09:36 AM
+Bug,HHH-3600,19187,exception while saving bidirectional association ,adamw,itai.peleg,Critico,Chiusa,Duplicato,13/Nov/2008 02:07 AM,21/Mar/2011 12:06 PM

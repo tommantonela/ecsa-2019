@@ -1,0 +1,62 @@
+Issue Type,Issue key,Issue id,Parent id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated
+Bug,HHH-13255,68221,,"jar, sources.jar and javadoc.jar should not have the same bundle symbolic name in MANIFEST.MF",,tobi.hein,Minor,Open,,06/feb/2019 14:20 PM,07/feb/2019 14:30 PM
+Bug,HHH-13244,68201,,setting hibernate.jpa.compliance.proxy=true and org.hibernate debug level to DEBUG breaks hibernate,gbadner,stoty,Minor,Closed,Solved,01/02/2019 03:21,18/feb/2019 22:19 PM
+Bug,HHH-13088,67880,,Auto registration of custom types is broken for @Embeddable classes,aepedraza3117,ask4gilles,Major,Open,,08/11/2018 03:22,16/01/2019 03:38
+Bug,HHH-12668,67036,,support for persistence_2_2.xsd and orm_2_2.xsd,crancran,dejwsz,Major,Closed,Solved,07/06/2018 00:37,05/07/2018 05:17
+Bug,HHH-12641,66956,,Joined table values not persisted when using JOINED JPA inheritance after upgrade beyond 5.2.12,,lyor,Major,Awaiting Response,,28/05/2018 02:12,17/10/2018 08:27
+Bug,HHH-12635,66942,,IllegalStateException: Cache provider not started,tomkast,tomkast,Blocker,Closed,Rejected,25/05/2018 07:21,30/05/2018 00:11
+Bug,HHH-12492,66626,,JPA delete query generated has missing table alias and thus incorrect semantics ,yrodiere,romanstumm,Major,Closed,Solved,17/04/2018 02:44,02/08/2018 10:40
+Bug,HHH-12396,66354,,Problem with mapping of the annotation @Enumerated(EnumType.STRING),crancran,tuerker,Major,Closed,Solved,15/03/2018 09:04,12/07/2018 05:58
+Bug,HHH-12333,66250,,NPE in AbstractPropertyMapping.getSuperCollection after upgrading hibernate-core 5.2.13 to 5.2.14,christian.beikov,pcom.progweb,Major,Closed,Duplicato,01/03/2018 06:09,01/03/2018 11:14
+Bug,HHH-12329,66239,,Duplicate generator for specific sequence per table,,stefan.mueller,Major,Solved,Won't be Solved,28/02/2018 01:28,15/ott/2018 18:45 PM
+Bug,HHH-12047,65658,,JDK 9: java.io.IOException: invalid constant type: 19 at 5,sanne,andrew.bourgeois,Major,Closed,Solved,19/ott/2017 16:20 PM,06/02/2018 09:02
+Bug,HHH-11713,59211,,hbm.xml mapping order cache and tuplizer,crancran,jmgoyesc,Critical,Closed,Rejected,02/05/2017 05:35,02/05/2017 06:20
+Bug,HHH-11363,53705,,Invalid SQL generated when using explicit and implicit joins,,piofinsy,Major,Closed,Out of Date,28/12/2016 03:10,05/feb/2017 19:45 PM
+Bug,HHH-11309,52704,,Cannot install Hibernate feature into Karaf 4.0.7,gunnar.morling,dsulimchuk,Major,Closed,Solved,06/12/2016 03:47,19/01/2017 05:57
+Bug,HHH-11155,50445,,Lazy properties are not updated if not all lazy properties (e.g. collections) are initialized,steve,chet116,Critical,Closed,Solved,05/10/2016 03:34,02/03/2017 11:21
+Bug,HHH-11086,49413,,Postgres 9.5 ERROR: Invalid endian flag value encountered,,makn,Major,Open,,05/09/2016 08:12,05/feb/2017 20:09 PM
+Bug,HHH-10914,46031,,Annotation org.hibernate.annotations.NamedQuery works not correct,,AdiS,Major,Closed,Rejected,01/07/2016 02:55,01/07/2016 04:07
+Bug,HHH-10845,45053,,HHH000327 org.hibernate.property.access.spi.PropertyAccessException,,kevinlexus,Major,Open,,13/giu/2016 20:03 PM,13/giu/2016 20:03 PM
+Bug,HHH-10605,41937,,"HSQLDialect dosn't use ""if exists"" when dropping sequences",dreab8,tscheinecker,Minor,Closed,Solved,09/03/2016 02:20,01/giu/2016 20:50 PM
+Bug,HHH-10391,40739,,org.hibernate.ejb.Ejb3Configuration.scanForClasses error trying to scan <jar-file>,,gavenkoa,Major,Awaiting Test Case,,20/12/2015 11:04,21/dic/2015 21:42 PM
+Bug,HHH-10375,40645,,adding an entity at index to list with @OrderColumn in detached Entity,dreab8,juersimon,Blocker,Closed,Solved,13/12/2015 09:13,16/nov/2016 23:40 PM
+Bug,HHH-9957,38416,,Weird Behavior of Cache with fetchmode join and scroll-iterator,,karlos,Critical,Open,,21/07/2015 03:22,26/02/2016 07:28
+Improvement,HHH-9835,37647,,hibernate and h2 database UUID validation error,,Friso,Minor,Open,,30/mag/2015 17:17 PM,30/08/2016 07:03
+Bug,HHH-9832,37643,,Cannot use hibernate 5.0.0.CR1 with hibernate-search 5.3.0.Beta2,,trongducdinh,Major,Solved,Rejected,28/mag/2015 22:08 PM,30/mag/2015 17:18 PM
+Bug,HHH-9606,36412,,NPE when updating or deleting entities with byte array as Id.,gbadner,pkrauzowicz,Major,Closed,Duplicato,09/02/2015 05:13,22/apr/2015 14:14 PM
+Bug,HHH-9485,35435,,Duplicate Property with AccessType.PROPERTY and MappedSuperclass,steve,jbraeuchi,Major,Closed,Solved,06/11/2014 11:34,04/09/2018 02:04
+Bug,HHH-9472,35331,,Connection - Transcation becomes unusable ,,naveenreddy.alka,Blocker,Closed,Rejected,30/10/2014 07:46,26/ago/2015 13:53 PM
+New feature,HHH-9022,31838,,Bulk insertion of CollectionTable elements in Hibernate,,sudarshan89,Minor,Closed,Rejected,04/mar/2014 20:26 PM,21/04/2014 05:32
+Bug,HHH-8783,30812,,@javax.persistence.Foreignkey#name does not change contraint name,brmeyer,dvdgsng,Major,Closed,Solved,09/12/2013 09:51,22/04/2015 11:24
+Bug,HHH-8779,30762,,Bundle symbolic name error - duplicate name,brmeyer,ieugen,Major,Closed,Solved,06/dic/2013 16:08 PM,26/feb/2014 16:55 PM
+Bug,HHH-8324,28425,,Database Updates failing when using UUID (uuid2 key generation).,,clint,Major,Awaiting Response,,21/06/2013 07:41,27/ott/2015 20:25 PM
+Bug,HHH-7494,25758,,Hibernate dependencies are not convergent,hardy.ferentschik,isopov,Major,Closed,Won't be Solved,31/07/2012 04:16,07/03/2014 09:31
+Bug,HHH-7149,24970,,Lack of logging during import script,,theaspect,Major,Closed,Out of Date,05/mar/2012 23:12 PM,27/ott/2015 18:05 PM
+Bug,HHH-6891,24532,,Hibernate is not reusing connections from the pool,,momatej,Major,Closed,Rejected,13/dic/2011 18:38 PM,25/set/2012 18:22 PM
+Bug,HHH-6865,24472,,PessimisticLockException should be thrown when pessimistic read and write locking strategies fail,steve,gbadner,Major,Closed,Solved,30/11/2011 06:30,30/nov/2011 22:11 PM
+Bug,HHH-6572,23718,,IdentifierGeneratorHelper.getGeneratedIdentity() assumes that id column will always be at index 1,,richardballard,Major,Closed,Rejected,14/ago/2011 23:17 PM,08/07/2014 08:10
+Bug,HHH-6252,23128,,tests fail if change log level to trace,brmeyer,stliu,Major,Closed,Impossibile riprodurre,25/05/2011 02:11,07/10/2013 12:22
+Bug,HHH-6042,22762,,To much columns in select queries after creating criteria with join,,karol,Major,Closed,Rejected,23/03/2011 07:17,08/07/2014 08:11
+Bug,HHH-5962,22617,,Custom POJO Loading strategy for cglib and javassist,,ilya.samartsev,Major,Closed,Out of Date,25/02/2011 06:15,15/ago/2012 19:56 PM
+New feature,HHH-5234,21432,,2-phase load components,steve,steve,Major,Open,,17/05/2010 12:28,04/06/2015 07:24
+Bug,HHH-5233,21431,,@FetchProfile fails to take more than one @FetchProfile.FetchOverride,hardy.ferentschik,emmanuel,Major,Closed,Solved,17/05/2010 09:28,07/dic/2016 21:25 PM
+Bug,HHH-5165,21320,,"FetchMode=Eager not respected, N+1 SELECT Problem",,dbelca,Minor,Closed,Rejected,27/04/2010 06:45,08/07/2014 08:10
+Improvement,HHH-4930,20972,,Drop org. prefix on hibernate.cache.default_cache_concurrency_strategy and hibernate.id.new_generator_mappings for consistency,emmanuel,emmanuel,Major,Closed,Solved,18/02/2010 03:35,22/04/2015 11:24
+Bug,HHH-4745,20736,,/hibernate.cfg.xml not found,,nhsqlguy,Major,Closed,Rejected,31/dic/2009 18:48 PM,02/10/2013 12:01
+Bug,HHH-4621,20584,,Trunk build fails due to maven plugins having been moved,,gcc,Major,Closed,Rejected,30/11/2009 04:22,12/dic/2009 18:44 PM
+Bug,HHH-4566,20512,,Maven deps: JAXB API and JAXB RI shouldn't be dependencies of Hibernate Annotations.,hardy.ferentschik,tblachowicz,Minor,Closed,Solved,11/11/2009 08:54,22/04/2015 11:23
+Bug,HHH-4565,20511,,Maven deps: HSQLDB shouldn't be a dependency in compile scope.,jcosta,tblachowicz,Minor,Closed,Solved,11/11/2009 08:51,21/03/2011 12:06
+Bug,HHH-4563,20509,,Maven repository uses proprietary JTA as transitive dependency,,kpiwko@redhat.com,Major,Closed,Won't be Solved,11/11/2009 08:21,19/10/2010 10:55
+New feature,HHH-4338,16617,,reference a target entity (in a collection) by entity name,,armin,Major,Open,,11/01/2007 07:13,22/04/2015 11:23
+Bug,HHH-3719,19392,,Javassist fails to instrument valid classes in certain cases,,doublep,Minor,Closed,Rejected,19/01/2009 04:48,08/07/2014 08:10
+Bug,HHH-3129,18167,,Null Role in PersitentCollection during a onCollectionRecreate() in an Interceptor,,jose.chillan,Major,Open,,25/02/2008 09:00,11/gen/2018 19:30 PM
+Improvement,HHH-2875,17728,,repackage cglib/asm under org.hibernate namespace,steve,steve,Major,Closed,Solved,02/ott/2007 17:26 PM,03/feb/2009 17:04 PM
+Bug,HHH-2835,17655,,Setting org.hibernate.type logging to debug produces no logging,plentz,jgro,Minor,Solved,Out of Date,12/09/2007 02:56,10/10/2016 01:47
+Bug,HHH-2605,17164,,Since 3.2.4 no value specified for row id,steve,dicr,Major,Closed,Solved,10/05/2007 07:12,02/07/2009 11:09
+Bug,HHH-2318,16553,,Sometimes wrong classloader used for proxy interfaces,,wiemer,Major,Closed,Out of Date,20/12/2006 01:24,15/ago/2012 20:04 PM
+Improvement,HHH-2298,16520,,Hibernate only uses info level on logger message to disencourage Hibernate Pool Manager. This should be a warning.,brmeyer,fchiesa,Minor,Closed,Solved,10/12/2006 08:34,22/01/2014 09:42
+Bug,HHH-2183,16322,,org.hibernate.LazyInitializationException: failed to lazily initialize a collection while using lazy set with key as property-ref in the mapping,gbadner,ajonak,Blocker,Closed,Rejected,26/10/2006 10:58,30/04/2008 05:10
+New feature,HHH-1523,15039,,Rebuild fetches from query-cache hits,,vikas_s,Major,Open,,24/02/2006 06:37,11/04/2018 01:30
+New feature,HHH-455,12858,,Obtain non-intercepted Session,steve,steve,Minor,Closed,Solved,09/mag/2005 13:33 PM,14/05/2005 12:42
+Bug,HHH-393,12743,,ClassCastException with EntityMode.DOM4J,,martiner,Major,Closed,Solved,22/apr/2005 20:05 PM,23/04/2005 00:40
+Bug,HHH-204,12401,,Wrong/uncommon log name in class ...hql ast ErrorCounter,jdavis,sormuras,Trivial,Closed,Solved,11/03/2005 04:57,21/03/2011 11:59

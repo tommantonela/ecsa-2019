@@ -1,0 +1,7 @@
+Issue Type,Issue key,Issue id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated,Due Date
+Bug,CXF-7537,13111507,Java 2 security failures - doPrivs needed to run with Java 2 security mgr,,andymc,Major,Closed,Fixed,23/Oct/17 18:46,24/Jan/18 15:02,
+New Feature,CXF-6119,12758283,Implement WS-Transfer specification,dkulp,dudae,Major,Closed,Implemented,27/Nov/14 20:13,28/Nov/17 10:42,
+Bug,CXF-2091,12416313,CXF Bundle is hardly usable under OSGi,dkulp,ceefour,Major,Closed,Fixed,06/Mar/09 16:42,01/Feb/10 19:02,
+Bug,CXF-595,12367908,wsdl2java '-nexclude' flag appears not to work,ema,ema,Major,Closed,Fixed,24/Apr/07 09:07,29/Aug/07 18:07,
+Bug,CXF-492,12365904,EndpointReferenceType class in the generated code is in the incorrect namespace,,bravi,Major,Closed,Fixed,27/Mar/07 13:59,29/Aug/07 02:05,
+New Feature,CXF-4756,12627786,Introduce @FaultAction annotation to specify WSA Action for Faults,dkulp,jmartisk,Minor,Closed,Fixed,16/Jan/13 08:04,02/May/13 02:30,

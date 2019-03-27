@@ -1,0 +1,5 @@
+Issue Type,Issue key,Issue id,Parent id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated
+Improvement,HHH-11358,53607,,Changes to persister contracts,steve,steve,Major,Closed,Solved,23/dic/2016 22:47 PM,06/12/2018 07:22
+Improvement,HHH-11263,51826,,Improvements in boot-time model and its creation as well as processing into runtime-model,steve,steve,Major,Closed,Solved,21/11/2016 07:14,06/12/2018 07:43
+Improvement,HHH-3210,18304,,"""No type name"" MappingException message is far too cryptic",,dlmiles,Minor,Open,,31/03/2008 07:38,31/03/2008 10:52
+,,,,,,,,,,,

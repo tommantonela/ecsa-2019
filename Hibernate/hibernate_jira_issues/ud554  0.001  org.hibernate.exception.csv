@@ -1,0 +1,2 @@
+Tipo ticket,Chiave di ticket,ID ticket,Riepilogo,Assegnatario,Reporter,Priorità,Stato,Risoluzione,Creato,Aggiornato
+Bug,HHH-3679,19332,Sybase conversion of Java byte to tinyint fails with 8-bit values causing unit test failures,gbadner,gbadner,Importante,Chiusa,Risolto,26/Dec/2008 18:23 PM,27/Oct/2011 09:03 AM

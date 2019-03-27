@@ -1,0 +1,213 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Affects Version/s,Fix Version/s,Component/s,Component/s,Component/s,Due Date,Votes,Description,Environment,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field (Attachment count),Custom field (Blog - New Blog Administrators),Custom field (Blog - New Blog PMC),Custom field (Blog - Write access),Custom field (Blog Administrator?),Custom field (Blogs - Admin for blog),Custom field (Blogs - Email Address),Custom field (Blogs - Existing Blog Access Level),Custom field (Blogs - Existing Blog Name),Custom field (Blogs - New Blog Write Access),Custom field (Blogs - Username),Custom field (Bugzilla - Email Notification Address),Custom field (Bugzilla - List of usernames),Custom field (Bugzilla - PMC Name),Custom field (Bugzilla - Project Name),Custom field (Bugzilla Id),Custom field (Date of First Response),Custom field (Docs Text),Custom field (Enable Automatic Patch Review),Custom field (Epic Colour),Custom field (Epic Link),Custom field (Epic Name),Custom field (Epic Status),Custom field (Estimated Complexity),Custom field (Existing GitBox Approval),Custom field (External issue ID),Custom field (External issue URL),Custom field (Git Notification Mailing List),Custom field (Git Repository Import Path),Custom field (Git Repository Name),Custom field (Git Repository Type),Custom field (GitHub Options),Custom field (Github Integration),Custom field (Github Integrations - Other),Custom field (Global Rank),Custom field (INFRA - Subversion Repository Path),Custom field (Initial Confluence Contributors),Custom field (Last public comment date),Custom field (Machine Readable Info),Custom field (New-TLP-TLPName),Custom field (Priority),Custom field (Project),Custom field (Protected Branch),Custom field (Rank),Custom field (Rank (Obsolete)),Custom field (Severity),Custom field (Space Description),Custom field (Space Key),Custom field (Space Name),Custom field (Testcase included),Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment
+ResolverUtil under OSGi error: Could not search jar file '/org/apache/camel/converter',CAMEL-774,12485911,Bug,Closed,CAMEL,Camel,software,ancosen,"Apache Camel is an extremely powerful declarative Java based, type-safe <a href=""http://camel.apache.org/dsl.html"">Domain Specific Language</a> POJO broker, which uses <a href=""http://camel.apache.org/enterprise-integration-patterns.html"">Enterprise Integration Patterns</a> as its foundation for integration.",http://camel.apache.org/,Major,Fixed,davsclaus,ceefour,ceefour,31/Jul/08 20:39,16/Feb/09 05:51,11/Mar/19 11:12,04/Aug/08 12:14,1.4.0,1.5.0,camel-core,camel-stream,osgi,,0,"This is a sequel of CAMEL-577, which itself duplicated by CAMEL-558 and CAMEL-522. Probably related to CAMEL-636, CAMEL-693, and CAMEL-689.
+
+First of all, to even get this to ""work"" requires my own bundle to have this manifest:
+DynamicImport-Package: org.apache.camel.*
+
+Failing to do so will result in more classloading errors.
+
+Even so, it still fails with this:
+
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - Testing for class org.apache.camel.converter.jaxp.XmlConverter matches criteria [annotated with @Converter]
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - Found class: class org.apache.camel.converter.jaxp.XmlConverter in classloader: BundleDelegatingClassLoader for [org.elfattah.shell (org.elfattah.shell)]
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - Testing for class org.apache.camel.converter.stream.StreamCacheConverter$StreamSourceCache matches criteria [annotated with @Converter]
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - Testing for class org.apache.camel.converter.stream.StreamCacheConverter$InputStreamCache matches criteria [annotated with @Converter]
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - Searching for: annotated with @Converter in package: org/apache/camel/converter using classloader: org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - It's not an osgi bundle classloader
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - Getting resource URL for package: org/apache/camel/converter with classloader: org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader@1a5db4b
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - URL from classloader: bundleresource://20/org/apache/camel/converter
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - Decoded urlPath: /org/apache/camel/converter
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - Scanning for classes in [/org/apache/camel/converter] matching criteria: annotated with @Converter
+[SpringOsgiExtenderThread-2] DEBUG org.apache.camel.util.ResolverUtil - Loading from jar: /org/apache/camel/converter
+[SpringOsgiExtenderThread-2] ERROR org.apache.camel.util.ResolverUtil - Could not search jar file '/org/apache/camel/converter' for classes matching criteria: annotated with @Converter due to an IOException: /org/apache/camel/converter (No such file or directory)
+java.io.FileNotFoundException: /org/apache/camel/converter (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at org.apache.camel.util.ResolverUtil.loadImplementationsInJar(ResolverUtil.java:476)
+	at org.apache.camel.util.ResolverUtil.find(ResolverUtil.java:362)
+	at org.apache.camel.util.ResolverUtil.find(ResolverUtil.java:277)
+	at org.apache.camel.util.ResolverUtil.findAnnotated(ResolverUtil.java:253)
+	at org.apache.camel.impl.converter.AnnotationTypeConverterLoader.load(AnnotationTypeConverterLoader.java:66)
+	at org.apache.camel.impl.converter.DefaultTypeConverter.checkLoaded(DefaultTypeConverter.java:218)
+	at org.apache.camel.impl.converter.DefaultTypeConverter.convertTo(DefaultTypeConverter.java:64)
+	at org.apache.camel.util.IntrospectionSupport.convert(IntrospectionSupport.java:216)
+	at org.apache.camel.util.IntrospectionSupport.setProperty(IntrospectionSupport.java:194)
+	at org.apache.camel.util.IntrospectionSupport.setProperties(IntrospectionSupport.java:167)
+	at org.apache.camel.impl.DefaultComponent.setProperties(DefaultComponent.java:187)
+	at org.apache.camel.impl.DefaultComponent.createEndpoint(DefaultComponent.java:89)
+	at org.apache.camel.impl.DefaultCamelContext.getEndpoint(DefaultCamelContext.java:270)
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:52)
+	at org.apache.camel.model.RouteType.resolveEndpoint(RouteType.java:100)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:102)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:108)
+	at org.apache.camel.model.FromType.resolveEndpoint(FromType.java:73)
+	at org.apache.camel.impl.DefaultRouteContext.getEndpoint(DefaultRouteContext.java:77)
+	at org.apache.camel.model.RouteType.addRoutes(RouteType.java:214)
+	at org.apache.camel.model.RouteType.addRoutes(RouteType.java:90)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:537)
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:529)
+	at org.apache.camel.spring.SpringCamelContext.doStart(SpringCamelContext.java:149)
+	at org.apache.camel.impl.ServiceSupport.start(ServiceSupport.java:47)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:103)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster$1.run(SimpleApplicationEventMulticaster.java:78)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:76)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:275)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:737)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.finishRefresh(AbstractDelegatedExecutionApplicationContext.java:306)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.completeRefresh(AbstractDelegatedExecutionApplicationContext.java:279)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$CompleteRefreshTask.run(DependencyWaiterApplicationContextExecutor.java:145)
+	at java.lang.Thread.run(Thread.java:619)
+[SpringOsgiExtenderThread-2] DEBUG org.apache.camel.util.ResolverUtil - Found: [class org.apache.camel.converter.ObjectConverter, class org.apache.camel.converter.jaxp.DomConverter, class org.apache.camel.converter.IOConverter, class org.apache.camel.converter.jaxp.StaxConverter, class org.apache.camel.converter.jaxp.XmlConverter, class org.apache.camel.converter.stream.StreamCacheConverter, class org.apache.camel.converter.jaxp.StreamSourceConverter, class org.apache.camel.converter.NIOConverter, class org.apache.camel.converter.CollectionConverter, class org.apache.camel.converter.CamelConverter]
+
+The project that demonstrates this error is open source, check it out here:
+http://svn.assembla.com/svn/elfattah/trunk
+
+do mvn install on elfattah-api and elfattah-shell
+
+Then go to elfattah-shell and:
+
+mvn pax:provision","Linux/Ubuntu, Maven 2.0.9, Camel 1.4.0, Spring 2.5.5, Spring-DM 1.1.0",,,,,,,,,0.0,,,,,,,,,,,,,,,,2008-08-01 05:43:45.047,,no_permission,,,,,,,,,,,,,,,,83307,,,Mon Feb 16 05:51:48 UTC 2009,,,,,,0|i01ebb:,6088,,,,,,"31/Jul/08 20:46;ceefour;FYI, the bundle #20 mentioned by the error logger is camel-core:
+
+osgi> b 20
+initial@reference:file:org.apache.camel.camel-core_1.4.0.jar/ [20]
+  Id=20, Status=ACTIVE      Data Root=/home/ceefour/project/elfattah/elfattah-shell/runner/equinox/org.eclipse.osgi/bundles/20/data
+  No registered services.
+  No services in use.
+  Exported packages
+    org.apache.camel.model.loadbalancer; version=""1.4.0""[exported]
+    org.apache.camel.component.dataset; version=""1.4.0""[exported]
+    org.apache.camel.language.simple; version=""1.4.0""[exported]
+    org.apache.camel.processor.loadbalancer; version=""1.4.0""[exported]
+    org.apache.camel.processor.aggregate; version=""1.4.0""[exported]
+    org.apache.camel.component.log; version=""1.4.0""[exported]
+    org.apache.camel.converter.jaxp; version=""1.4.0""[exported]
+    org.apache.camel.processor.resequencer; version=""1.4.0""[exported]
+    org.apache.camel.processor.interceptor; version=""1.4.0""[exported]
+    org.apache.camel.impl.converter; version=""1.4.0""[exported]
+    org.apache.camel.management; version=""1.4.0""[exported]
+    org.apache.camel.util.jndi; version=""1.4.0""[exported]
+    org.apache.camel.util; version=""1.4.0""[exported]
+    org.apache.camel.impl; version=""1.4.0""[exported]
+    org.apache.camel.builder.xml; version=""1.4.0""[exported]
+    org.apache.camel.component.list; version=""1.4.0""[exported]
+    org.apache.camel.component.direct; version=""1.4.0""[exported]
+    org.apache.camel.component.seda; version=""1.4.0""[exported]
+    org.apache.camel.component.ref; version=""1.4.0""[exported]
+    org.apache.camel.component.file; version=""1.4.0""[exported]
+    org.apache.camel.converter; version=""1.4.0""[exported]
+    org.apache.camel.language.bean; version=""1.4.0""[exported]
+    org.apache.camel.model.config; version=""1.4.0""[exported]
+    org.apache.camel.model.dataformat; version=""1.4.0""[exported]
+    org.apache.camel.processor; version=""1.4.0""[exported]
+    org.apache.camel.component.mock; version=""1.4.0""[exported]
+    org.apache.camel.component.timer; version=""1.4.0""[exported]
+    org.apache.camel.component.vm; version=""1.4.0""[exported]
+    org.apache.camel.model.language; version=""1.4.0""[exported]
+    org.apache.camel.model; version=""1.4.0""[exported]
+    org.apache.camel.converter.stream; version=""1.4.0""[exported]
+    org.apache.camel.builder; version=""1.4.0""[exported]
+    org.apache.camel.component.jmx; version=""1.4.0""[exported]
+    org.apache.camel.spi; version=""1.4.0""[exported]
+    org.apache.camel; version=""1.4.0""[exported]
+    org.apache.camel.component.bean; version=""1.4.0""[exported]
+    org.apache.camel.language; version=""1.4.0""[exported]
+    org.apache.camel.view; version=""1.4.0""[exported]
+    org.apache.camel.processor.validation; version=""1.4.0""[exported]
+    org.apache.camel.processor.idempotent; version=""1.4.0""[exported]
+    org.apache.camel.processor.exceptionpolicy; version=""1.4.0""[exported]
+    org.apache.camel.component.file.strategy; version=""1.4.0""[exported]
+  Imported packages
+    javax.activation; version=""0.0.0""<System Bundle [0]>
+    javax.management; version=""0.0.0""<System Bundle [0]>
+    javax.management.modelmbean; version=""0.0.0""<System Bundle [0]>
+    javax.management.monitor; version=""0.0.0""<System Bundle [0]>
+    javax.management.remote; version=""0.0.0""<System Bundle [0]>
+    javax.naming; version=""0.0.0""<System Bundle [0]>
+    javax.naming.spi; version=""0.0.0""<System Bundle [0]>
+    javax.xml.bind.annotation; version=""0.0.0""<System Bundle [0]>
+    javax.xml.namespace; version=""0.0.0""<System Bundle [0]>
+    javax.xml.parsers; version=""0.0.0""<System Bundle [0]>
+    javax.xml.stream; version=""0.0.0""<System Bundle [0]>
+    javax.xml.transform; version=""0.0.0""<System Bundle [0]>
+    javax.xml.transform.dom; version=""0.0.0""<System Bundle [0]>
+    javax.xml.transform.sax; version=""0.0.0""<System Bundle [0]>
+    javax.xml.transform.stream; version=""0.0.0""<System Bundle [0]>
+    javax.xml.validation; version=""0.0.0""<System Bundle [0]>
+    javax.xml.xpath; version=""0.0.0""<System Bundle [0]>
+    org.apache.commons.logging; version=""1.1.1""<initial@reference:file:org.ops4j.pax.logging.pax-logging-api_1.1.1.jar/ [12]>
+    org.osgi.framework; version=""1.4.0""<System Bundle [0]>
+    org.springframework.jmx.export.annotation; version=""2.5.5""<initial@reference:file:org.springframework.bundle.spring.context_2.5.5.jar/ [15]>
+    org.springframework.jmx.export.assembler; version=""2.5.5""<initial@reference:file:org.springframework.bundle.spring.context_2.5.5.jar/ [15]>
+    org.springframework.jmx.export.metadata; version=""2.5.5""<initial@reference:file:org.springframework.bundle.spring.context_2.5.5.jar/ [15]>
+    org.w3c.dom; version=""0.0.0""<System Bundle [0]>
+    org.xml.sax; version=""0.0.0""<System Bundle [0]>
+  No fragment bundles
+  Named class space
+    org.apache.camel.camel-core; bundle-version=""1.4.0""[provided]
+  No required bundles
+","31/Jul/08 20:51;ceefour;To assist you and to make sure that future revisions of our project don't mask the bug, I've tagged it dedicated to this bug:
+
+http://svn.assembla.com/svn/elfattah/tags/camel-774-bug","01/Aug/08 05:43;davsclaus;Hi Hendry
+
+Thanks for the detailed error report. The bug is definitely that Camel fails to identify that its is a *bundle* loader
+{code}
+[SpringOsgiExtenderThread-2] TRACE org.apache.camel.util.ResolverUtil - It's not an osgi bundle classloader
+{code}","01/Aug/08 06:00;ceefour;Thanks Claus. I hope this can help getting it resolved. Let me know if it is, even a snapshot will do very well for us.
+
+Another question, is below ""DynamicImport-Package workaround"" supposed to be bug? Or it's just the way Camel needs to be configured on OSGi? If so it should be mentioned somewhere in the docs... not everybody knows that DynamicImport-Package even exists.. (even some OSGi programmers)
+
+-----
+
+First of all, to even get this to ""work"" requires my own bundle to have this manifest:
+DynamicImport-Package: org.apache.camel.*
+
+Failing to do so will result in more classloading errors.","01/Aug/08 06:29;davsclaus;Hi Hendry
+
+I got your project and is running it with jdk6 update 7 (had to update from u3, not using java6 normally with camel development).
+I can reproduce the bug on my laptop.
+
+It actually pick ups the converters with the real bundle classloader, but since Camel will try several classloaders it gets to this one as well that we are not supposed to use.
+I will work on a patch.
+
+About the dynamic stuff. I am not an OSGi expert either but we get the attentions of the good people that know much more about this stuff.","01/Aug/08 06:40;davsclaus;Okay got it working now with a 1.5-SNAPSHOT.
+
+I will improve the fix in camel-core and commit it later. I am afraid you need to use 1.5 snapshots but they are published on apache snapshot repos.
+
+{code}
+[seda:shellIn thread:1] DEBUG org.apache.camel.impl.ProducerCache - >>>> Endpoint[seda:shellOut] Exchange[Message: Thank you for saying 'Hej med dig']
+[seda:shellIn thread:1] DEBUG org.apache.camel.impl.ProducerCache - >>>> Endpoint[seda:shellOut] Exchange[Message: Seriously, this is good...!]
+{code}","01/Aug/08 07:20;davsclaus;Hendry
+
+I have commited a patch in camel 1.5 snapshot that should work - at least on my laptop.
+
+You can try it out by switching from 1.4.0 to 1.5-SNAPSHOT for camel-version. You can get the jars from apache snapshot maven repo
+Documentation is here:
+http://activemq.apache.org/camel/download.html
+
+Wait 2-3 hours or more before the CI server have build and published the jars.",01/Aug/08 07:20;davsclaus;And please let us know if it works for you.,"01/Aug/08 08:46;ceefour;Thanks Claus I'll check it out
+
+Regarding DynamicImport-Package for me it's ""OK"" bcuz I also do it with Swing, however maybe there are better alternative
+
+For now the workaround is that, so should put it somewhere in documentation especially the ones relating to OSGi - Camel relationship (as Camel have been touted as OSGi friendly since 1.2 esp. by James)","01/Aug/08 11:11;ceefour;Thanks, working fine:
+
+http://trac.assembla.com/elfattah/changeset/26
+
+Changeset 26
+
+Timestamp:
+    08/01/08 11:09:03 (less than one hour ago)
+Author:
+    ceefour
+Message:
+
+    Now using Apache Camel 1.5-SNAPSHOT, which fixed an OSGi problem. See: https://issues.apache.org/activemq/browse/CAMEL-774 . Thank you Claus Ibsen for helping me in this.
+
+Files:
+
+        *          trunk/elfattah-parent/pom.xml (modified) (2 diffs)
+        *          trunk/elfattah-shell/debug.args (added)
+        *          trunk/elfattah-shell/pom.xml (modified) (1 diff)
+        *          trunk/elfattah-shell/src/main/java/org/elfattah/shell/ShellRouteBuilder.java (modified) (1 diff)
+
+",16/Feb/09 05:51;davsclaus;Closing all 1.5.0 issues

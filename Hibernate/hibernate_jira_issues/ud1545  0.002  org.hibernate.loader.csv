@@ -1,0 +1,2 @@
+Issue Type,Issue key,Issue id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated
+Bug,HHH-2835,17655,Setting org.hibernate.type logging to debug produces no logging,plentz,jgro,Minor,Solved,Out of Date,12/09/2007 02:56,10/10/2016 01:47

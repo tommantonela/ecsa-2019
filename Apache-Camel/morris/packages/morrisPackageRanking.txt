@@ -1,0 +1,5 @@
+org.apache.camel  0.041
+org.apache.camel.util  0.008
+org.apache.camel.processor  0.004
+org.apache.camel.model  0.002
+org.apache.camel.builder  0.001

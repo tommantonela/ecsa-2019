@@ -1,0 +1,17 @@
+org.apache.cxf  0.476512
+org.apache.cxf.interceptor  0.170417
+org.apache.cxf.endpoint  0.160607
+org.apache.cxf.transport  0.061476
+org.apache.cxf.message  0.055808
+org.apache.cxf.binding  0.024971
+org.apache.cxf.phase  0.011929
+org.apache.cxf.service  0.010295
+org.apache.cxf.feature  0.006849
+org.apache.cxf.databinding  0.007173
+org.apache.cxf.common  0.002683
+org.apache.cxf.helpers  5.66E-4
+org.apache.cxf.ws.addressing  7.56E-4
+org.apache.cxf.configuration  0.001113
+org.apache.cxf.attachment  2.0E-6
+org.apache.cxf.management  3.1E-5
+org.apache.cxf.bus  1.89E-4

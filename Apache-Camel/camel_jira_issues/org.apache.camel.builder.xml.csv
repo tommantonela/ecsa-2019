@@ -1,0 +1,4 @@
+Issue Type,Custom field (Patch Info),Issue key,Issue id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated,Due Date
+Bug,Patch Available,CAMEL-12713,13177335,relative paths can remove scheme from xslt URI,davsclaus,pvdbosch,Major,Resolved,Fixed,07/Aug/18 08:58,07/Aug/18 12:07,
+Bug,,CAMEL-2940,12485952,org.apache.camel.component.test package is imported in camel-spring component - generates error on OSGI platform,cmoulliard,cmoulliard,Major,Closed,Fixed,12/Jul/10 15:12,24/Apr/11 09:57,
+Bug,,CAMEL-774,12485911,ResolverUtil under OSGi error: Could not search jar file '/org/apache/camel/converter',davsclaus,ceefour,Major,Closed,Fixed,31/Jul/08 20:39,16/Feb/09 05:51,

@@ -1,0 +1,2 @@
+Tipo ticket,Chiave di ticket,ID ticket,Riepilogo,Assegnatario,Reporter,Priorità,Stato,Risoluzione,Creato,Aggiornato
+Bug,HHH-1400,14813,formula-based property leads to generation of invalid SQL with subselect fetches,steve,cmrogers,Importante,Chiusa,Risolto,26/Jan/2006 16:51 PM,28/Oct/2015 09:03 AM

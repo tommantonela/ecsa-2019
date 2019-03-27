@@ -1,0 +1,17 @@
+org.hibernate  0.009
+org.hibernate.engine  0.005
+org.hibernate.persister.entity  0.005
+org.hibernate.pretty  0.002
+org.hibernate.mapping  0.002
+org.hibernate.internal  0.001
+org.hibernate.type  0.001
+org.hibernate.cache  0.001
+org.hibernate.sql  0.001
+org.hibernate.exception  0.001
+org.hibernate.dialect  0.001
+org.hibernate.service  0.001
+org.hibernate.loader  0.001
+org.hibernate.id  0.001
+org.hibernate.proxy  0.001
+org.hibernate.cfg  0.001
+org.hibernate.persister.collection  0.001

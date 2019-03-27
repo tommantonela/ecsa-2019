@@ -1,0 +1,5 @@
+"Issue Type","Issue key","Issue id","Summary","Assignee","Reporter","Priority","Status","Resolution","Created","Updated","Due Date"
+"Improvement","CXF-7600",13127766,"Add Automatic-Module-Name MANIFEST entry for Java 9 compatibility","reta","deki","Major","Resolved","Fixed","30/Dec/17 18:06","04/Jun/18 23:45",
+"Bug","CXF-4351",12558681,"No JSON output under OSGi because cxf-rt-frontend-jaxrs is missing Import-Package for org.apache.cxf.jaxrs.provider.json",,"cdolan","Major","Closed","Fixed","30/May/12 22:09","28/Aug/12 17:44",
+"Improvement","CXF-3363",12499664,"Use MessageFactory.newInstance(SOAPConstants.SOAP_1_1_PROTOCOL) instead of MessageFactory.newInstance()","dkulp","gburboz","Major","Closed","Fixed","25/Feb/11 03:20","18/Apr/11 12:44",
+"Bug","CXF-2091",12416313,"CXF Bundle is hardly usable under OSGi","dkulp","ceefour","Major","Closed","Fixed","06/Mar/09 16:42","01/Feb/10 19:02",

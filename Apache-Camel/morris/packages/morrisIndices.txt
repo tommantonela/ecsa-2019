@@ -1,0 +1,16 @@
+Parameter Mu_Star Mu Mu_Star_Conf Sigma
+org.apache.camel.management 0.000 0.000 0.000 0.000
+org.apache.camel.processor 0.004 0.004 0.000 0.000
+org.apache.camel.api 0.000 0.000 0.000 0.000
+org.apache.camel.support 0.000 0.000 0.000 0.000
+org.apache.camel.util 0.008 0.008 0.000 0.000
+org.apache.camel.model 0.002 0.002 0.000 0.000
+org.apache.camel.view 0.000 0.000 0.000 0.000
+org.apache.camel.builder 0.001 0.001 0.000 0.000
+org.apache.camel 0.041 0.041 0.000 0.000
+org.apache.camel.com 0.000 0.000 0.000 0.000
+org.apache.camel.spi 0.000 0.000 0.000 0.000
+org.apache.camel.converter 0.000 0.000 0.000 0.000
+org.apache.camel.component 0.000 0.000 0.000 0.000
+org.apache.camel.language 0.000 0.000 0.000 0.000
+org.apache.camel.main 0.000 0.000 0.000 0.000

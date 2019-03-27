@@ -1,0 +1,2 @@
+Tipo ticket,Chiave di ticket,ID ticket,Riepilogo,Assegnatario,Reporter,Priorità,Stato,Risoluzione,Creato,Aggiornato
+Bug,HHH-1801,15565,Event names for Configuration.setEventListener() should be fixed and documented.,,jak,Importante,Chiusa,Rejected,31/May/2006 13:18 PM,21/Mar/2011 12:04 PM

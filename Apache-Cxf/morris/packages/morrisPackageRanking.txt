@@ -1,0 +1,11 @@
+org.apache.cxf  0.009
+org.apache.cxf.interceptor  0.006
+org.apache.cxf.endpoint  0.005
+org.apache.cxf.transport  0.003
+org.apache.cxf.message  0.003
+org.apache.cxf.binding  0.002
+org.apache.cxf.phase  0.002
+org.apache.cxf.feature  0.001
+org.apache.cxf.common  0.001
+org.apache.cxf.service  0.001
+org.apache.cxf.databinding  0.001

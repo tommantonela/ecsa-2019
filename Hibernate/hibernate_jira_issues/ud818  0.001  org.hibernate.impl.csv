@@ -1,0 +1,2 @@
+Tipo ticket,Chiave di ticket,ID ticket,Riepilogo,Assegnatario,Reporter,Priorità,Stato,Risoluzione,Creato,Aggiornato
+Bug,HHH-5858,22441,Cannot load entities with Clob or Lob properties into stateless sessions,,jroper,Importante,Awaiting Response,,20/Jan/2011 19:44 PM,27/Oct/2015 20:26 PM

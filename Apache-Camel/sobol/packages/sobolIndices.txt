@@ -1,0 +1,16 @@
+Parameter S1 S1_conf ST ST_conf
+org.apache.camel.management 0.000102 0.000499 0.000052 0.000004
+org.apache.camel.processor 0.007982 0.006394 0.007570 0.000519
+org.apache.camel.api 0.000000 0.000000 0.000000 0.000000
+org.apache.camel.support 0.000000 0.000000 0.000000 0.000000
+org.apache.camel.util 0.036363 0.013386 0.035639 0.002369
+org.apache.camel.model 0.001536 0.002777 0.001469 0.000099
+org.apache.camel.view -0.000037 0.000370 0.000026 0.000002
+org.apache.camel.builder 0.000117 0.000943 0.000170 0.000012
+org.apache.camel 0.956202 0.058385 0.955957 0.050912
+org.apache.camel.com 0.000204 0.000832 0.000120 0.000008
+org.apache.camel.spi 0.000052 0.000613 0.000074 0.000005
+org.apache.camel.converter 0.000065 0.000710 0.000096 0.000007
+org.apache.camel.component 0.000055 0.000754 0.000120 0.000008
+org.apache.camel.language -0.000138 0.000782 0.000120 0.000008
+org.apache.camel.main 0.000000 0.000000 0.000000 0.000000

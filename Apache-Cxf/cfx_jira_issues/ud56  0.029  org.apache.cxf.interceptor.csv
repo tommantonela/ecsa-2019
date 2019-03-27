@@ -1,0 +1,9 @@
+"Issue Type","Issue key","Issue id","Summary","Assignee","Reporter","Priority","Status","Resolution","Created","Updated","Due Date"
+"Bug","CXF-7641",13137465,"BareOutInterceptor seems to be taking lot of time",,"anurag.shrivastava.in","Major","Open",,"09/Feb/18 15:50","18/Apr/18 19:11",
+"Bug","CXF-7537",13111507,"Java 2 security failures - doPrivs needed to run with Java 2 security mgr",,"andymc","Major","Closed","Fixed","23/Oct/17 18:46","24/Jan/18 15:02",
+"Bug","CXF-6221",12769796,"CDI integration extension does not detect annotations on Karaf","reta","ciapunek","Major","Closed","Fixed","24/Jan/15 01:26","10/Apr/17 19:07",
+"New Feature","CXF-1387",12385985,"Support for GZIP compression of HTTP payloads","dkulp","button_boxer","Major","Closed","Fixed","10/Jan/08 17:34","23/Mar/15 11:21",
+"Bug","CXF-4351",12558681,"No JSON output under OSGi because cxf-rt-frontend-jaxrs is missing Import-Package for org.apache.cxf.jaxrs.provider.json",,"cdolan","Major","Closed","Fixed","30/May/12 22:09","28/Aug/12 17:44",
+"Bug","CXF-2091",12416313,"CXF Bundle is hardly usable under OSGi","dkulp","ceefour","Major","Closed","Fixed","06/Mar/09 16:42","01/Feb/10 19:02",
+"Improvement","CXF-5439",12683097,"Introduce annotations for marking CXF interceptors and features to enable the auto-discovery","sergey_beryozkin","sergey_beryozkin","Minor","Closed","Fixed","06/Dec/13 10:36","14/Oct/16 14:20",
+"Improvement","CXF-3079",12478009,"Javadoc refinements are necesarry as exposed by the CXF build process (mvn -e)","dkulp","gliesian","Trivial","Closed","Fixed","21/Oct/10 16:55","21/Jan/11 18:14",

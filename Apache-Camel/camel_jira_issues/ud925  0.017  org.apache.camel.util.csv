@@ -1,0 +1,10 @@
+"Issue Type","Custom field (Patch Info)","Issue key","Issue id","Parent id","Summary","Assignee","Reporter","Priority","Status","Resolution","Created","Updated","Due Date"
+"Bug",,"CAMEL-4954","12540342",,"Camel 2.9.0 incapable of working with % in endpoint URIs","hadrian","sruehl","Critical","Resolved","Fixed","30/Jan/12 10:26","18/03/2013 18:15",
+"Improvement",,"CAMEL-12542","13162479",,"seda - Have a default queue size limit","dmvolod","davsclaus","Major","Resolved","Fixed","29/May/18 05:18","06/Jun/18 15:55",
+"Bug",,"CAMEL-2940","12485952",,"org.apache.camel.component.test package is imported in camel-spring component - generates error on OSGI platform","cmoulliard","cmoulliard","Major","Closed","Fixed","12/Jul/10 15:12","24/04/2011 09:57",
+"Bug",,"CAMEL-2266","12487697",,"java.lang.ClassNotFoundException: org.apache.camel.converter.jaxb.JaxbConverter not found from bundle [org.apache.camel.camel-core] (Equinox - Karaf)","njiang","cmoulliard","Major","Closed","Fixed","08/Dec/09 12:35","03/11/2010 05:12",
+"Bug",,"CAMEL-774","12485911",,"ResolverUtil under OSGi error: Could not search jar file '/org/apache/camel/converter'","davsclaus","ceefour","Major","Closed","Fixed","31/Jul/08 20:39","16/02/2009 05:51",
+"Improvement",,"CAMEL-12079","13124621",,"Bean language: support bean::function notation","davsclaus","lb","Minor","Resolved","Fixed","13/Dec/17 10:10","05/03/2018 09:43",
+"Improvement","Patch Available","CAMEL-4820","12536214",,"Javadoc editorial fixes to org.apache.camel.util package","njiang","gmazza","Minor","Resolved","Fixed","22/Dec/11 20:55","04/Jan/12 16:34",
+"New Feature",,"CAMEL-3339","12487893",,"Main class in camel-core","boday","davsclaus","Minor","Closed","Fixed","14/11/2010 11:04","25/Oct/11 11:35",
+"Improvement","Patch Available","CAMEL-298","12485420",,"Remove tangle between impl and impl.converter","davsclaus","chris@die-schneider.net","Trivial","Closed","Fixed","19/Jan/08 16:22","12/May/08 12:48",

@@ -1,0 +1,11 @@
+Tipo ticket,Chiave di ticket,ID ticket,Riepilogo,Assegnatario,Reporter,Priorità,Stato,Risoluzione,Creato,Aggiornato
+Bug,HHH-12396,66354,Problem with mapping of the annotation @Enumerated(EnumType.STRING),crancran,tuerker,Importante,Chiusa,Risolto,15/Mar/2018 09:04 AM,12/Jul/2018 05:58 AM
+Bug,HHH-9351,34217,ManyToOneType.isDirty,,liuxinhui,Importante,Aperto,,19/Aug/2014 19:02 PM,25/Oct/2017 11:51 AM
+Bug,HHH-6284,23169,Hibernate Core 3.6.4 Conflict org.hibernate.type.WrappedMaterializedBlobType ,gbadner,aloker,Importante,Chiusa,Rejected,02/Jun/2011 13:41 PM,07/Mar/2014 09:31 AM
+Bug,HHH-5095,21209,BasicLoader.isBag() checks type assignability wrongly,,mbenson,Importante,Chiusa,Rejected,09/Apr/2010 12:07 PM,03/Oct/2013 13:39 PM
+Miglioramento,HHH-4111,20234,Unable to hot-swap logger configuration for Hibernate types due to local cache ,,batmat,Importante,Aperto,,28/Aug/2009 08:26 AM,26/May/2013 04:01 AM
+Bug,HHH-3148,18195,Exception thrown by debug trace code: ComponentType toLoggableString,,petegeraghty,Minore,Chiusa,Rejected,29/Feb/2008 08:15 AM,21/Apr/2016 12:21 PM
+Bug,HHH-2835,17655,Setting org.hibernate.type logging to debug produces no logging,plentz,jgro,Minore,Risolta,Out of Date,12/Sep/2007 02:56 AM,10/Oct/2016 01:47 AM
+Bug,HHH-2767,17511,"TimestampType uses SimpleDateFormat, which does not include Timestamp nanoseconds",,alankrueger,Minore,Chiusa,Rejected,03/Aug/2007 15:10 PM,08/Jul/2014 08:10 AM
+Miglioramento,HHH-2413,16740,Offer a way to log bound jdbc parameters in a uniform way for UserType implementors,,batmat,Minore,Aperto,,09/Feb/2007 06:03 AM,22/Dec/2009 09:20 AM
+Miglioramento,HHH-1859,15700,"Parameterize string format in DateType, TimeType, and TimestampType org.hibernate.type classes",,metcalfjm,Minore,Chiusa,Rejected,27/Jun/2006 10:42 AM,27/Jun/2006 12:53 PM
