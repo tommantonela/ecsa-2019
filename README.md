@@ -129,7 +129,7 @@ The objective values (or model values) for the sensitivity analysis are obtained
 
 ![ADI Formula](https://github.com/tommantonela/ecsa-2019/blob/gh-pages/adi-formula.png)
 
-## Contact information:
+## Contact information
 
 - _Antonela Tommasel_ (ISISTAN, CONICET-UNICEN. Argentina) antonela.tommasel@isistan.unicen.edu.ar 
 - _J. Andres Diaz-Pace_ (ISISTAN, CONICET-UNICEN. Argentina) andres.diazpace@isistan.unicen.edu.ar 
