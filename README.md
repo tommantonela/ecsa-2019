@@ -12,9 +12,9 @@ Architectural debt indexes are a common metric-based approach for assessing the 
 ## Replication material
 
 This repository contains the datasets for the 3 analyzed systems, namely:
- - Apache Camel
- - Apache CxF
- - Hibernate
+ - [Apache Camel](https://github.com/tommantonela/ecsa-2019/tree/master/Apache-Camel)
+ - [Apache CxF](https://github.com/tommantonela/ecsa-2019/tree/master/Apache-Cxf)
+ - [Hibernate](https://github.com/tommantonela/ecsa-2019/tree/master/Hibernate)
 
 ### Files
 
